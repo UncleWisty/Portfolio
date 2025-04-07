@@ -1,0 +1,28 @@
+---
+import estudiosData from '../../data/cv.json';
+import Layout from '../../layouts/Layout.astro';
+
+//function que retorna todas las rutas dinamicas para generar noseque
+export async function getStaticPaths(){
+    //mapear los estudios para generar a traves de los id paginas
+    const paths = estudiosData.education.map(estudio => ({
+        params:{id:estudio.id} //la id sera usada para la ruta dinamica
+    }))
+    return paths;
+}
+
+//obtener la ID de la ruta dinamica
+const {id} = Astro.params;
+
+//Buscar el estudio por ID
+const estudio = estudiosData.education.find(estudio => estudio.id === id);
+
+//Si no lo encuentra el estudio, saca un error
+if(!estudio){
+    throw new Error('Estudio no encontrado');
+}
+---
+
+<Layout>
+    <h1>{estudio.degree}</h1>
+</Layout>

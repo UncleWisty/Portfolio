@@ -1,0 +1,18 @@
+---
+import Footer from '../components/Footer.astro';
+import Nav from '../components/Nav.astro';
+import Titulo from '../components/Titulo.astro';
+import Button from '../components/Button.astro';
+import Layout from '../layouts/Layout.astro';
+import Experience from '../components/Experience.astro';
+import cvData from '../data/cv.json';
+---
+
+<Layout>
+	<Nav/>
+	<div class="mt-30 mx-30">
+	<Titulo title={cvData.name} subtitle={cvData.title} description={cvData.info_summary}></Titulo>
+	<Experience/>
+	</div>
+	<Footer/>
+</Layout>

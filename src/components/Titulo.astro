@@ -1,0 +1,19 @@
+---
+import "../styles/global.css";
+interface Props{
+title:string;
+subtitle?:string;
+description?:string; //prop opcional => ?
+
+}
+const {title="titulo por defecto",
+description="",subtitle=""} = Astro.props;
+---
+
+<div class="mb-5">
+
+    <h1 class="font-black text-5xl mb-2 select-none">{title}</h1>
+    <h3 class="font-black text-gray-200 text-2xl select-none">{subtitle}</h3>
+    <p class="text-wrap mt-5 text-lg select-none">{description}</p>
+
+</div>

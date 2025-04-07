@@ -1,0 +1,117 @@
+{
+    "name": "Lorién Biela",
+    "title": "Web Developer Full Stack",
+    "profile_summary": "Desarrollador web",
+    "info_summary": "lorem ipsum",
+    "contact": {
+        "email": "lorienbimc@gmail.com",
+        "phone": "+34 689 729 753",
+        "location": "Viladecans, Catalunya",
+        "website": "https://alexferrer.dev",
+        "linkedin": "https://www.linkedin.com/in/alexferrer",
+        "github": "https://github.com/alexferrer"
+    },
+    "skills": [
+        "JavaScript", "TypeScript", "React", "Astro", "Vue.js",
+        "Node.js", "Express.js", "MongoDB", "PostgreSQL",
+        "HTML", "CSS", "SASS", "TailwindCSS", "Bootstrap",
+        "Git", "Docker", "CI/CD", "Testing (Jest, Cypress)"
+    ],
+    "experience": [{
+            "position": "Desenvolupador Full Stack",
+            "company": "TechSolutions",
+            "photo":"https://picsum.photos/seed/techsolutions/300/200",
+            "location": "Barcelona, Catalunya",
+            "duration": "2021 - Present",
+            "responsibilities": [
+                "Desenvolupament i manteniment d'aplicacions web amb React i Node.js.",
+                "Implementació de bases de dades amb PostgreSQL i MongoDB.",
+                "Integració d'APIs REST i GraphQL.",
+                "Millora del rendiment i accessibilitat de les aplicacions."
+            ]
+        },
+        {
+            "position": "Desenvolupador Frontend",
+            "company": "DigitalApps",
+            "photo":"https://picsum.photos/seed/digitalapps/300/200",
+            "location": "Barcelona, Catalunya",
+            "duration": "2021 - 2022",
+            "responsibilities": [
+                "Creació de components UI reutilitzables amb React i TailwindCSS.",
+                "Optimització de la càrrega de pàgines amb tècniques de lazy loading i code splitting.",
+                "Implementació de proves unitàries i e2e amb Jest i Cypress."
+            ]
+        },
+        {
+            "position": "Desenvolupador Junior",
+            "company": "WebTech",
+            "photo":"https://picsum.photos/seed/webtech/300/200",
+            "location": "Gavà, Catalunya",
+            "duration": "2018 - 2021",
+            "responsibilities": [
+                "Disseny i implementació de components interactius amb Vue.js.",
+                "Col·laboració en el desenvolupament de funcions backend amb Node.js.",
+                "Millora de la UX/UI amb enfocament en la facilitat d'ús i l'accessibilitat.",
+                "Integració d'APIs i millora de la seguretat de les aplicacions."
+            ]
+        }
+    ],
+    "education": [{
+            "id":"0",
+            "degree": "FP de Desenvolupament d'Aplicacions Web",
+            "institution": "FP Núria",
+            "year": "2012 - 2014"
+        },
+        {
+            "id":"1",
+            "degree": "Grau en Enginyeria Informàtica",
+            "institution": "Universitat Pompeu Fabra",
+            "year": "2014 - 2018"
+        }
+    ],
+    "languages": [
+        { "language": "Català", "level": "Nadiu" },
+        { "language": "Espanyol", "level": "Nadiu" },
+        { "language": "Anglès", "level": "Avançat" }
+    ],
+    "projects": [{
+            "name": "TaskManager App",
+            "slug": "taskmanager-app",
+            "description": "Aplicació de gestió de tasques amb React i Firebase. Y demas cosas secretas y eso",
+            "url": "https://taskmanager.dev",
+            "image": "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg"
+        },
+        {
+            "name": "E-commerce Platform",
+            "slug": "e-commerce-platform",
+            "description": "Plataforma de comerç electrònic desenvolupada amb Vue.js i Node.js.",
+            "url": "https://ecommerce.example.com",
+            "image": "https://images.pexels.com/photos/2265482/pexels-photo-2265482.jpeg"
+        },
+        {
+            "name": "Blog CMS",
+            "slug": "blog-cms",
+            "description": "Sistema de gestió de continguts per blogs amb Astro i Markdown.",
+            "url": "https://blogcms.dev",
+            "image": "https://images.pexels.com/photos/270637/pexels-photo-270637.jpeg"
+        },
+        {
+            "name": "Fitness Tracker",
+            "slug": "fitness-tracker",
+            "description": "Aplicació per monitoritzar entrenaments i progrés físic.",
+            "url": "https://fitnesstracker.dev",
+            "image": "https://images.pexels.com/photos/2261477/pexels-photo-2261477.jpeg"
+        }
+    ],
+    "blog_posts": [{
+            "title": "Optimització de React: Com millorar el rendiment de la teva aplicació",
+            "summary": "Explorem tècniques com memoization, lazy loading i code splitting per optimitzar aplicacions React.",
+            "date": "15-02-2024"
+        },
+        {
+            "title": "Node.js i Express: Bones pràctiques per al desenvolupament d'APIs",
+            "summary": "Guia completa per estructurar projectes Node.js de manera escalable i eficient.",
+            "date": "20-01-2024"
+        }
+    ]
+}

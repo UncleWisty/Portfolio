@@ -1,0 +1,16 @@
+---
+import "../styles/global.css";
+interface props{
+    content:string;
+    page?:string;
+}
+const {content ="Button", page=""} = Astro.props;
+---
+
+<div class="h-10">
+<a href={page}>
+<button type="button" class="font-bold  text-xl px-5 py-2.5 text-center mb-2 border-2 border-dashed hover:border-green-700">{content}</button></a>
+</div>
+
+
+

@@ -1,0 +1,36 @@
+---
+import slugData from '../../data/cv.json';
+import Nav from '../../components/Nav.astro';
+import Layout from '../../layouts/Layout.astro';
+import Footer from '../../components/Footer.astro';
+import Button from '../../components/Button.astro';
+
+//function que retorna todas las rutas dinamicas para generar noseque
+export async function getStaticPaths(){
+    //mapear los proyectos para generar a traves de los slug paginas
+    const paths = slugData.projects.map(project => ({
+        params:{slug:project.slug} //el slug sera usada para la ruta dinamica
+    }))
+    return paths;
+}
+
+//obtener la ID de la ruta dinamica
+const {slug} = Astro.params;
+
+//Buscar el proyecto por ID
+const project = slugData.projects.find(project => project.slug === slug);
+
+//Si no lo encuentra el proyecto, saca un error
+if(!project){
+    throw new Error('Proyecto no encontrado');
+}
+---
+
+<Layout>
+    <Nav/>
+    <div class="mt-30 mx-30">
+        <h1 class="font-black text-5xl mb-100">{project.name}</h1>
+        <Button content="/index" page="/">
+    </div>
+    <Footer/>
+</Layout>

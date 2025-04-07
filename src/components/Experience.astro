@@ -1,0 +1,24 @@
+---
+const {position, company, location, duration,responsabilities} = Astro.props;
+import cvData from '../data/cv.json';
+
+
+
+---
+
+{cvData.experience.map((exp)=>(
+<div class="flex flex-row mb-10 p-3 w-100% sm:w-1/2 justify-center bg-black border-5 border-green-700 border-dashed py-5 px-5">
+<div class="w-4/7">
+<p class="text-white text-xl font-bold">{exp.position}</p>
+<p class="text-green-500 text-xl font-bold">{exp.company}</p>
+<h3 class="">{exp.location}</h3>
+<h3 class="">{exp.duration}</h3>
+</div>
+<div class="w-4/7 ml-5 object-contain">
+<img src={exp.photo} alt="">
+</div>
+</div>
+))}
+
+
+
