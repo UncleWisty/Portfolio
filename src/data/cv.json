@@ -2,14 +2,14 @@
     "name": "Lorién Biela",
     "title": "Web Developer Full Stack",
     "profile_summary": "Desarrollador web",
-    "info_summary": "lorem ipsum",
+    "info_summary": "Como Junior estoy aprendiendo conceptos sobre programacion y cada dia con mas ganas de seguir mi camino laboral",
     "contact": {
         "email": "lorienbimc@gmail.com",
         "phone": "+34 689 729 753",
         "location": "Viladecans, Catalunya",
         "website": "https://alexferrer.dev",
         "linkedin": "https://www.linkedin.com/in/alexferrer",
-        "github": "https://github.com/alexferrer"
+        "github": "https://github.com/UncleWisty"
     },
     "skills": [
         "JavaScript", "TypeScript", "React", "Astro", "Vue.js",
@@ -98,7 +98,7 @@
         {
             "name": "Fitness Tracker",
             "slug": "fitness-tracker",
-            "description": "Aplicació per monitoritzar entrenaments i progrés físic.",
+            "description": "Aplicació per monitoritzar entrenaments i progrés físic. Y tambien hace pesas por ti",
             "url": "https://fitnesstracker.dev",
             "image": "https://images.pexels.com/photos/2261477/pexels-photo-2261477.jpeg"
         }

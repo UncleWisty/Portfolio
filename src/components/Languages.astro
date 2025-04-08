@@ -1,0 +1,16 @@
+---
+import cvData from '../data/cv.json';
+---
+
+{cvData.languages.map((language)=>(
+<div class="flex flex-col mb-10 w-100% sm:w-1/2">
+<div class="w-full  bg-black border-5 border-green-700 border-dashed py-5 px-5">
+<h3 class="">{`${language.language}`}</h3>
+<h3 class="">{`${language.level}`}</h3>
+
+</div>
+</div>
+))}
+
+
+

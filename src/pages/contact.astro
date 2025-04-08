@@ -3,12 +3,25 @@ import Nav from '../components/Nav.astro';
 import Layout from '../layouts/Layout.astro';
 import Titulo from '../components/Titulo.astro';
 import Footer from '../components/Footer.astro';
+import cvData from '../data/cv.json';
+
 ---
 
 <Layout>
     <Nav/>
     <div class="mt-30 mx-30">
         <Titulo title="Contacto" description='Si quieres contactar conmigo, puedes a traves de los siguientes metodos.'></Titulo>
+
+        <div class="flex flex-row gap-10 flex-wrap">
+        <div class="flex flex-col border-green-700 border-5 border-dashed p-5">
+            <p>/email</p>
+            <p class="text-green-500 font-bold">{cvData.contact.email}</p>
+        </div>
+        <div class="flex flex-col border-green-700 border-5 border-dashed p-5">
+            <p>/github</p>
+            <a class="text-green-500 font-bold" href={cvData.contact.github}>github Lorien</a>
+        </div>
+    </div>
     </div>
     <Footer/>
 </Layout>

@@ -6,13 +6,24 @@ import Button from '../components/Button.astro';
 import Layout from '../layouts/Layout.astro';
 import Experience from '../components/Experience.astro';
 import cvData from '../data/cv.json';
+import Skills from '../components/Skills.astro';
+import Languages from '../components/Languages.astro';
 ---
 
 <Layout>
 	<Nav/>
 	<div class="mt-30 mx-30">
 	<Titulo title={cvData.name} subtitle={cvData.title} description={cvData.info_summary}></Titulo>
+	<Titulo title="Experience"/>
 	<Experience/>
+	<Titulo title="Skills"/>
+	<div class="flex flex-wrap flex-row w-full gap-5">
+	<Skills/>
+	</div>
+	<div class="flex flex-wrap flex-col w-full gap-2 mt-10">
+		<Titulo title="Idiomas"/>
+		<Languages/>
+	</div>
 	</div>
 	<Footer/>
 </Layout>

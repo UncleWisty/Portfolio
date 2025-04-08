@@ -28,8 +28,10 @@ if(!project){
 
 <Layout>
     <Nav/>
-    <div class="mt-30 mx-30">
-        <h1 class="font-black text-5xl mb-100">{project.name}</h1>
+    <div class="mt-30 mx-30 flex flex-col mb-10">
+        <h1 class="font-black text-5xl mb-10">{project.name}</h1>
+        <h3>{project.description}</h3>
+        <img src={project.image} alt="" class="w-200 my-10">
         <Button content="/index" page="/">
     </div>
     <Footer/>
